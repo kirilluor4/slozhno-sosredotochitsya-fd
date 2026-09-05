@@ -46,8 +46,6 @@
 /* значек текст */
 .decorative__element {
   position: absolute;
-  top: 0;
-  right: 0;
   content: "";
   display: flex;
   align-items: center;
@@ -57,7 +55,7 @@
   padding-right: 8px;
   text-transform: uppercase;
   top:20px;
-  right:20px;
+  left: 943px;
 }
 
 /* значек текст после */
@@ -70,6 +68,8 @@
   background-color: var(--accent-color);
   fill: var(--accent-color);
   box-shadow: 0 0 4px 2px var(--accent-color);
+  top: 723px;
+  left: 20px;
 }
 
 /*Заголовок шапки*/
@@ -120,27 +120,23 @@
 
 .frame::before {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 20px;
+  left: 979px;
   content: "";
   border-top: 1px solid var(--btn-color);
   border-right: 1px solid var(--btn-color);
   inline-size: 25px;
   block-size: 25px;
-  top:20px;
-  left: 20px;
 }
 
 .frame::after {
   position: absolute;
-  bottom: 0;
-  left: 0;
   content: "";
   border-bottom: 1px solid var(--btn-color);
   border-left: 1px solid var(--btn-color);
   inline-size: 25px;
   block-size: 25px;
-  bottom:20px;
+  top: 723px;
   left: 20px;
 }
 
@@ -154,9 +150,10 @@
 .question__section-answer-text {
   font-size: var(--font-size);
   color: var(--text-color);
+  padding-block-start: 10px;
 }
 
-.question__section__up {
+.question__section-why {
   display: grid;
   grid-template-columns: 34% 66%;
   padding-block-start: 60px;
@@ -173,27 +170,27 @@
   padding-block-end: 10px;
 }
 
-.question__section-mid {
+.question__section-what {
   padding-block-start: 80px;
   padding-block-end: 80px;
   margin: 0 20px;
 }
 
-.question__section-answer-mid-container {
+.question__section-answer-what-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   padding-block-start: 20px;
 }
-.question__section-title-mid {
+.question__section-title-what {
   max-inline-size: 315px;
 }
 
-.question__section-answer-title-mid {
+.question__section-answer-title-what {
   margin-block-end: 10px;
 }
 
-.question__section__under {
+.question__section__how {
   display: grid;
   grid-template-columns: 34% 66%;
   padding-block-end: 80px;
@@ -204,13 +201,9 @@
   font-weight: 400;
 }
 
-.question__section-answer-under {
+.question__section-answer-how {
   display: grid;
   gap: 20px;
-}
-
-.question__section-answer-text-under {
-  padding-block-start: 10px;
 }
 
 /* картинки */
@@ -311,32 +304,46 @@
 
   .header__text {
     max-inline-size: 364px;
-    max-block-size: 117px;
   }
 
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
   }
 
-  .question__section__up {
+  .frame::before {
+    top: 20px;
+    left: 723px;
+  }
+
+  .frame::after {
+    top: 979px;
+    left: 20px;
+  }
+
+  .decorative__element{
+    top: 20px;
+    left: 687px;
+  }
+
+  .question__section__why {
 
     grid-template-columns: 33% 67%;
     gap: 20px;
     padding-inline-end:20px;
   }
 
-  .question__section-answer-mid-container {
+  .question__section-answer-what-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding-block-start: 20px;
   }
 
-  .question__section-title-mid {
+  .question__section-title-what {
     max-inline-size: 236px;
   }
   
-  .question__section__under {
+  .question__section__how {
     display: grid;
     grid-template-columns: 35% 65%;
     padding-block-end: 80px;
@@ -369,10 +376,9 @@
 
 .header__text {
   max-inline-size: 355px;
-  max-block-size: 117px;
 }  
 
-.question__section__up {
+.question__section__why {
   margin: 0px 10px;
   padding: 40px 0 0 0;
   display: flex;
@@ -380,23 +386,23 @@
   gap: 20px;
 }
 
-.question__section-mid {
+.question__section-what {
   margin: 0 10px;
   padding-block-start: 50px;
   padding-inline-end: 0 ;
   padding-block-end: 50px;
 }
 
-.question__section-title-mid {
+.question__section-title-what {
   min-inline-size: 355px;
 }
 
-.question__section-answer-mid-container {
+.question__section-answer-what-container {
   display: flex;
   flex-direction: column;
 }
 
-.question__section__under {
+.question__section__how {
   margin: 0 10px;
   display: flex;
   flex-direction: column;
@@ -426,19 +432,22 @@
 
 .footer__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  }
+}
 
-  .decorative__element {
-    margin: 10px;
-  }
   
-  .frame::before {
-    margin: 10px;
-  }
+.frame::before {
+  top: 10px;
+  left: 339.96px;
+}
   
-  .frame::after {
-    block-size: 25px;
-    margin: 10px;
-  }
+.frame::after {
+  top: 633px;
+  left: 10px;
+}
+
+.decorative__element{
+  top: 10px;
+  left: 304px;
+}
 }
 	
