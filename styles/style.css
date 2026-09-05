@@ -1,6 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 .header {
-  min-block-size: 100vh;
+  min-height: 668px;
+  height: 100vh;
   padding: 20px;
   display: grid;
   position: relative;
@@ -37,9 +38,10 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid rgba(255, 0, 112, 0.40);
+  border: 1px solid var(--menu-button);
   cursor: pointer;
 }
+
 
 /* значек текст */
 .decorative__element {
@@ -54,7 +56,8 @@
   text-align: center;
   padding-right: 8px;
   text-transform: uppercase;
-  margin: 20px;
+  top:20px;
+  right:20px;
 }
 
 /* значек текст после */
@@ -66,7 +69,7 @@
   border-radius: 50%;
   background-color: var(--accent-color);
   fill: var(--accent-color);
-  filter: drop-shadow(0px 0px 4px var(--accent-color));
+  box-shadow: 0 0 4px 2px var(--accent-color);
 }
 
 /*Заголовок шапки*/
@@ -90,7 +93,6 @@
 
 .header__text {
   max-inline-size: 491px;
-  max-block-size: 71px;
   justify-self: end;
   align-self: center;
 }
@@ -125,7 +127,8 @@
   border-right: 1px solid var(--btn-color);
   inline-size: 25px;
   block-size: 25px;
-  margin: 20px;
+  top:20px;
+  left: 20px;
 }
 
 .frame::after {
@@ -137,7 +140,8 @@
   border-left: 1px solid var(--btn-color);
   inline-size: 25px;
   block-size: 25px;
-  margin: 20px;
+  bottom:20px;
+  left: 20px;
 }
 
 .question__section-title {
@@ -152,7 +156,7 @@
   color: var(--text-color);
 }
 
-.question__section__one {
+.question__section__up {
   display: grid;
   grid-template-columns: 34% 66%;
   padding-block-start: 60px;
@@ -169,27 +173,27 @@
   padding-block-end: 10px;
 }
 
-.question__section-two {
+.question__section-mid {
   padding-block-start: 80px;
   padding-block-end: 80px;
   margin: 0 20px;
 }
 
-.question__section-answer-two-container {
+.question__section-answer-mid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   padding-block-start: 20px;
 }
-.question__section-title-two {
+.question__section-title-mid {
   max-inline-size: 315px;
 }
 
-.question__section-answer-title-two {
+.question__section-answer-title-mid {
   margin-block-end: 10px;
 }
 
-.question__section__fhree {
+.question__section__under {
   display: grid;
   grid-template-columns: 34% 66%;
   padding-block-end: 80px;
@@ -200,12 +204,12 @@
   font-weight: 400;
 }
 
-.question__section-answer-fhree {
+.question__section-answer-under {
   display: grid;
   gap: 20px;
 }
 
-.question__section-answer-text-fhree {
+.question__section-answer-text-under {
   padding-block-start: 10px;
 }
 
@@ -267,7 +271,7 @@
 }
 
 .footer__title {
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
   color: var(--title-color);
   font-weight: 700;
@@ -286,6 +290,7 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  background-color: var(--back);
 }
 
 
@@ -313,25 +318,25 @@
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
   }
 
-  .question__section__one {
+  .question__section__up {
 
     grid-template-columns: 33% 67%;
     gap: 20px;
     padding-inline-end:20px;
   }
 
-  .question__section-answer-two-container {
+  .question__section-answer-mid-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding-block-start: 20px;
   }
 
-  .question__section-title-two {
+  .question__section-title-mid {
     max-inline-size: 236px;
   }
   
-  .question__section__fhree {
+  .question__section__under {
     display: grid;
     grid-template-columns: 35% 65%;
     padding-block-end: 80px;
@@ -339,7 +344,6 @@
  
   .footer {
     padding: 20px;
-    display: flex;
     justify-content: center;
   }
 }
@@ -368,7 +372,7 @@
   max-block-size: 117px;
 }  
 
-.question__section__one {
+.question__section__up {
   margin: 0px 10px;
   padding: 40px 0 0 0;
   display: flex;
@@ -376,23 +380,23 @@
   gap: 20px;
 }
 
-.question__section-two {
+.question__section-mid {
   margin: 0 10px;
   padding-block-start: 50px;
   padding-inline-end: 0 ;
   padding-block-end: 50px;
 }
 
-.question__section-title-two {
+.question__section-title-mid {
   min-inline-size: 355px;
 }
 
-.question__section-answer-two-container {
+.question__section-answer-mid-container {
   display: flex;
   flex-direction: column;
 }
 
-.question__section__fhree {
+.question__section__under {
   margin: 0 10px;
   display: flex;
   flex-direction: column;
@@ -417,7 +421,6 @@
 
 .footer {
   padding: 10px;
-  display: flex;
   justify-content: center;
 } 
 
