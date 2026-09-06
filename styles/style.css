@@ -55,7 +55,7 @@
   padding-right: 8px;
   text-transform: uppercase;
   top:20px;
-  left: 943px;
+  right: 20px;
 }
 
 /* значек текст после */
@@ -68,8 +68,6 @@
   background-color: var(--accent-color);
   fill: var(--accent-color);
   box-shadow: 0 0 4px 2px var(--accent-color);
-  top: 723px;
-  left: 20px;
 }
 
 /*Заголовок шапки*/
@@ -121,7 +119,7 @@
 .frame::before {
   position: absolute;
   top: 20px;
-  left: 979px;
+  right: 20px;
   content: "";
   border-top: 1px solid var(--btn-color);
   border-right: 1px solid var(--btn-color);
@@ -136,7 +134,7 @@
   border-left: 1px solid var(--btn-color);
   inline-size: 25px;
   block-size: 25px;
-  top: 723px;
+  bottom: 20px;
   left: 20px;
 }
 
@@ -182,13 +180,11 @@
   gap: 20px;
   padding-block-start: 20px;
 }
-.question__section-title-what {
+
+.question__section-what .question__section-title{
   max-inline-size: 315px;
 }
 
-.question__section-answer-title-what {
-  margin-block-end: 10px;
-}
 
 .question__section__how {
   display: grid;
@@ -312,17 +308,17 @@
 
   .frame::before {
     top: 20px;
-    left: 723px;
+    right: 20px;
   }
 
   .frame::after {
-    top: 979px;
+    bottom: 20px;
     left: 20px;
   }
 
   .decorative__element{
     top: 20px;
-    left: 687px;
+    right: 20px;
   }
 
   .question__section__why {
@@ -339,7 +335,7 @@
     padding-block-start: 20px;
   }
 
-  .question__section-title-what {
+  .question__section-what .question__section-title{
     max-inline-size: 236px;
   }
   
@@ -378,7 +374,7 @@
   max-inline-size: 355px;
 }  
 
-.question__section__why {
+.question__section-why {
   margin: 0px 10px;
   padding: 40px 0 0 0;
   display: flex;
@@ -393,8 +389,8 @@
   padding-block-end: 50px;
 }
 
-.question__section-title-what {
-  min-inline-size: 355px;
+.question__section-what .question__section-title{
+  max-inline-size: 355px;
 }
 
 .question__section-answer-what-container {
@@ -402,7 +398,7 @@
   flex-direction: column;
 }
 
-.question__section__how {
+.question__section-how {
   margin: 0 10px;
   display: flex;
   flex-direction: column;
@@ -437,17 +433,17 @@
   
 .frame::before {
   top: 10px;
-  left: 339.96px;
+  right: 10px;
 }
   
 .frame::after {
-  top: 633px;
+  bottom: 10px;
   left: 10px;
-}
+} 
 
 .decorative__element{
   top: 10px;
-  left: 304px;
+  right: 10px;
 }
 }
 	
